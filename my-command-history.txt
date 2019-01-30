@@ -1,0 +1,63 @@
+    1  cd ~/
+    2  mkdir CIT173_Lab1
+    3  export FAVORITE_ANIMAL=parakeet
+    4  export MY_AGE=37
+    5  export BEST_PIZZA_TOPPING=pepperoni
+    6  export MY_MIDDLE_NAME=William
+    7  export MY_CAR_MAKE=Volkswagen
+    8  env > ~/CIT173_Lab1/my-env.txt
+    9  uname -a > ~/CIT173_Lab1/my-sys-info.txt
+   10  cat /etc/group
+   11  cat /etc/group | tee ~/CIT173_Lab1/my-groups.txt
+   12  head -1 128 /dev/urandom | tr -dc A-Za-z0-9 | head > ~/CIT173_Lab1/file1.dat
+   13  head -n 128 /dev/urandom | tr -dc A-Za-z0-9 | head > ~/CIT173_Lab1/file1.dat
+   14  head -n 128 /dev/urandom | tr -dc A-Za-z0-9 | head > ~/CIT173_Lab1/file2.dat
+   15  cat ~/CIT173_Lab1/file1.dat ~/CIT173_Lab1/file2.dat > ~/CIT173_Lab1/my-concat-file.dat
+   16  sed 's/1/monkey/g' ~/CIT173_Lab1/monkey.dat
+   17  sed 's/1/monkey/g' ~/CIT173_Lab1/my-concat-file.txt > ~/CIT173_Lab1/monkey.dat
+   18  sed 's/1/monkey/g' ~/CIT173_Lab1/my-concat-file.dat > ~/CIT173_Lab1/monkey.dat
+   19  git config --global user.name "skamal123"
+   20  git init
+   21  git remote add origin https://github.com/skamal123/CIT173_Lab1.git
+   22  git add -all
+   23  git add --all
+   24  git commit -m "Initial commit"
+   25  git config --global user.name "skamal123"
+   26  git config --global user.email "shahedkamal7@gmail.com"
+   27  git init
+   28  git remote add origin https://github.com/<skamal123/CIT173_Lab1.git
+   29  git remote add origin https://github.com/skamal123/CIT173_Lab1.git
+   30  rm -rf
+   31  git init
+   32  git remote add origin https://github.com/skamal123/CIT173_Lab1.git
+   33  git add --all
+   34  git commit -m "Initial commit"
+   35  git push origin master
+   36  man join
+   37  cat file1.txt file2.txt
+   38  cat file1.txt file2.txt > file3.txt
+   39  cat file1.txt file2.txt
+   40  man join
+   41  cat file1.txt file2.txt
+   42  ls -l
+   43  man dir
+   44  dir
+   45  mkdir
+   46  mkdir CIT173_Lab2
+   47  shell
+   48  echo
+   49  cd ~/
+   50  git clone https://github.com/RenoTechnologyAcademy/CIT173_Lab2_Files.git
+   51  cat ~/CIT173_Lab2_Files/phonebook1.txt ~/CIT173_Lab2_Files/phonebook2.txt > ~/CIT173_Lab2/my-phonebook.txt
+   52  wc ~/CIT173_Lab2/my-phonebook.txt
+   53  cat ~/CIT173_Lab2/my-phonebook.txt > less
+   54  cat ~/CIT173_Lab2_Files/phonelisting1.txt ~/CIT173_Lab2_Files/phonelisting2.txt > ~/CIT173_Lab2/my-phonelisting.txt
+   55  tac ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-phonebook-reverse.txt
+   56  join ~/CIT173_Lab2/my-phonebook.txt ~/CIT173_Lab2/my-phonelisting.txt > ~/CIT173_Lab2/my-joined-phonebook.txt
+   57  unexpand ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-tabbed-phonebook.txt
+   58  sort ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-sorted-phonebook.txt
+   59  nl ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-numbered-phonebook.txt
+   60  head ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-head-phonebook.txt
+   61  tail ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-tail-phonebook.txt
+   62  hitory > ~/CIT173_Lab2/my-command-history.txt
+   63  history > ~/CIT173_Lab2/my-command-history.txt
